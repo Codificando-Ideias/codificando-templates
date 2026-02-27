@@ -44,7 +44,8 @@ jobs:
           const { chromium } = require('playwright');
 
           const root = process.cwd();
-          const templates = JSON.parse(fs.readFileSync(path.join(root, 'data', 'templates.json'), 'utf8'));
+          const jsonRaw = fs.readFileSync(path.join(root, 'data', 'templates.json'), 'utf8');
+          const templates = JSON.parse(jsonRaw.replace(/^\uFEFF/, ''));
 
           (async () => {
             const browser = await chromium.launch({ headless: true });
