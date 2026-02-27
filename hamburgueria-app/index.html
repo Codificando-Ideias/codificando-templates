@@ -1,0 +1,62 @@
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BurgerFlow Hub</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-theme="light">
+  <main class="app">
+    <header class="app-top">
+      <strong><i class="bi bi-fire me-1"></i>BurgerFlow</strong>
+      <button id="themeToggle" class="btn btn-sm btn-outline-secondary"><i class="bi bi-circle-half"></i></button>
+    </header>
+
+    <section id="apresentacao" class="screen active">
+      <h1>Hamburgueria orientada por dados e sabor</h1>
+      <p>Tecnologia potencializando o humano na cozinha, no caixa e no delivery.</p>
+      <div class="kpis"><article><small>Pedidos/dia</small><strong>312</strong></article><article><small>Tempo medio</small><strong>18m</strong></article></div>
+    </section>
+
+    <section id="servicos" class="screen">
+      <h2>Servicos</h2>
+      <div class="list">
+        <article><i class="bi bi-bag-check"></i><div><h3>Delivery inteligente</h3><p>Fila e rota otimizadas por prioridade.</p></div></article>
+        <article><i class="bi bi-shop"></i><div><h3>Balcao express</h3><p>Atendimento rapido com previsao de demanda.</p></div></article>
+      </div>
+    </section>
+
+    <section id="diferenciais" class="screen">
+      <h2>Diferenciais</h2>
+      <ul>
+        <li>Inovacao pratica em operacao</li>
+        <li>Eficiência através de dados</li>
+        <li>Inteligência aplicada ao negócio</li>
+      </ul>
+    </section>
+
+    <section id="contato" class="screen">
+      <h2>Contato</h2>
+      <form id="contactForm" class="row g-2">
+        <div class="col-12"><input id="name" class="form-control" placeholder="Nome"></div>
+        <div class="col-12"><input id="email" class="form-control" placeholder="Email"></div>
+        <div class="col-12"><textarea id="msg" class="form-control" rows="3" placeholder="Mensagem"></textarea></div>
+        <div class="col-12 d-grid"><button class="btn btn-brand" type="submit">Enviar</button></div>
+        <div class="col-12"><small id="fb"></small></div>
+      </form>
+    </section>
+  </main>
+
+  <nav class="bottom-nav">
+    <button class="tab active" data-screen="apresentacao"><i class="bi bi-house"></i><span>Inicio</span></button>
+    <button class="tab" data-screen="servicos"><i class="bi bi-grid"></i><span>Servicos</span></button>
+    <button class="tab" data-screen="diferenciais"><i class="bi bi-stars"></i><span>Diferenciais</span></button>
+    <button class="tab" data-screen="contato"><i class="bi bi-chat-dots"></i><span>Contato</span></button>
+  </nav>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

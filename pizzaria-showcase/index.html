@@ -1,0 +1,203 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizzaria Forno Alto | Cardapio Digital</title>
+  <meta name="description" content="Template minimalista claro/escuro para pizzarias com linguagem visual própria e icones.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-theme="light">
+  <nav class="navbar navbar-expand-lg fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio"><i class="bi bi-fire me-2"></i>Forno Alto</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Alternar navegacao">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto align-items-lg-center">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#sabores">Sabores</a></li>
+          <li class="nav-item"><a class="nav-link" href="#mesa">Mesa QR</a></li>
+          <li class="nav-item"><a class="nav-link" href="#combos">Combos</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item ms-lg-2"><a href="#pedido" class="btn btn-sm btn-cta mt-2 mt-lg-0">Fazer pedido</a></li>
+          <li class="nav-item ms-lg-2 mt-2 mt-lg-0"><button id="theme-toggle" type="button" class="btn btn-sm btn-outline-secondary">Tema</button></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="inicio" class="hero section-space">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <p class="label mb-2"><i class="bi bi-clock-history me-1"></i>Entrega media em 30 min</p>
+            <h1 class="display-4 fw-bold mb-3">Pizza artesanal com massa de longa fermentacao</h1>
+            <p class="lead text-muted mb-4">Uma vitrine digital para pizzarias que querem vender mais com cardapio claro, identidade moderna e pedido direto.</p>
+            <div class="d-flex flex-wrap gap-3">
+              <a href="#sabores" class="btn btn-cta btn-lg"><i class="bi bi-book me-1"></i>Ver cardapio</a>
+              <a href="#pedido" class="btn btn-outline-secondary btn-lg"><i class="bi bi-whatsapp me-1"></i>Pedir agora</a>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <article class="hero-card reveal-item">
+              <h2 class="h5 mb-3"><i class="bi bi-stars me-1"></i>Destaques da casa</h2>
+              <div class="hero-item"><span>Margherita Trufada</span><strong class="counter" data-target="58">0</strong><small>pedidos/dia</small></div>
+              <div class="hero-item"><span>Calabresa Crocante</span><strong class="counter" data-target="46">0</strong><small>pedidos/dia</small></div>
+              <div class="hero-item"><span>Quatro Queijos Premium</span><strong class="counter" data-target="41">0</strong><small>pedidos/dia</small></div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="sabores" class="section-space">
+      <div class="container">
+        <div class="d-flex flex-wrap justify-content-between align-items-end gap-3 mb-4">
+          <div>
+            <p class="label mb-2"><i class="bi bi-grid me-1"></i>Cardapio</p>
+            <h2 class="h1 mb-0">Sabores que saem mais</h2>
+          </div>
+          <div class="btn-group btn-group-sm filter-group" role="group" aria-label="Filtro sabores">
+            <button type="button" class="btn btn-outline-secondary active" data-filter="all">Todos</button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="classica">Classicas</button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="especial">Especiais</button>
+            <button type="button" class="btn btn-outline-secondary" data-filter="doce">Doces</button>
+          </div>
+        </div>
+
+        <div class="row g-3" id="menu-grid">
+          <div class="col-md-6 col-xl-4 flavor-item" data-category="classica"><article class="flavor-card reveal-item"><h3 class="h5">Calabresa Crocante</h3><p class="text-muted mb-2"><i class="bi bi-fire me-1"></i>Molho italiano, calabresa, cebola roxa</p><strong>R$ 49</strong></article></div>
+          <div class="col-md-6 col-xl-4 flavor-item" data-category="especial"><article class="flavor-card reveal-item"><h3 class="h5">Margherita Trufada</h3><p class="text-muted mb-2"><i class="bi bi-stars me-1"></i>Mozzarella de bufala e azeite trufado</p><strong>R$ 59</strong></article></div>
+          <div class="col-md-6 col-xl-4 flavor-item" data-category="especial"><article class="flavor-card reveal-item"><h3 class="h5">Parma ao Mel</h3><p class="text-muted mb-2"><i class="bi bi-gem me-1"></i>Presunto parma, rúcula e finalização</p><strong>R$ 63</strong></article></div>
+          <div class="col-md-6 col-xl-4 flavor-item" data-category="classica"><article class="flavor-card reveal-item"><h3 class="h5">Portuguesa da Casa</h3><p class="text-muted mb-2"><i class="bi bi-egg-fried me-1"></i>Presunto, ovo, cebola e azeitonas</p><strong>R$ 52</strong></article></div>
+          <div class="col-md-6 col-xl-4 flavor-item" data-category="doce"><article class="flavor-card reveal-item"><h3 class="h5">Nutella com Morango</h3><p class="text-muted mb-2"><i class="bi bi-heart me-1"></i>Cobertura generosa e morango fresco</p><strong>R$ 47</strong></article></div>
+          <div class="col-md-6 col-xl-4 flavor-item" data-category="doce"><article class="flavor-card reveal-item"><h3 class="h5">Romeu & Julieta</h3><p class="text-muted mb-2"><i class="bi bi-music-note-beamed me-1"></i>Queijo cremoso com goiabada artesanal</p><strong>R$ 44</strong></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="combos" class="section-space stripe">
+      <div class="container">
+        <div class="row g-3">
+          <div class="col-lg-4"><article class="combo-card reveal-item"><h3 class="h5"><i class="bi bi-box2-heart me-1"></i>Combo Casal</h3><p class="text-muted mb-2">2 pizzas medias + 1 bebida 1L</p><strong>R$ 89</strong></article></div>
+          <div class="col-lg-4"><article class="combo-card reveal-item featured"><h3 class="h5"><i class="bi bi-people me-1"></i>Combo Familia</h3><p class="text-muted mb-2">2 pizzas grandes + 1 borda recheada</p><strong>R$ 129</strong></article></div>
+          <div class="col-lg-4"><article class="combo-card reveal-item"><h3 class="h5"><i class="bi bi-moon-stars me-1"></i>Combo Noite</h3><p class="text-muted mb-2">Pizza salgada + pizza doce</p><strong>R$ 99</strong></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mesa" class="section-space">
+      <div class="container">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <p class="label mb-2"><i class="bi bi-qr-code-scan me-1"></i>Menu de mesa</p>
+            <h2 class="h1 mb-3">Experiencia QR pronta para celular</h2>
+            <p class="text-muted mb-3">Ideal para atendimento no salao: cliente escaneia, escolhe sabor e chama garcom sem depender de cardapio fisico.</p>
+            <form id="table-form" class="row g-2" novalidate>
+              <div class="col-8">
+                <input id="table-number" class="form-control" type="text" placeholder="Numero da mesa">
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="col-4 d-grid">
+                <button id="table-submit" type="submit" class="btn btn-outline-secondary">Ativar</button>
+              </div>
+              <div class="col-12">
+                <p id="table-feedback" class="form-feedback mb-0" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+          <div class="col-lg-6">
+            <div class="mobile-preview reveal-item">
+              <div class="mobile-header">
+                <span>Mesa <strong id="preview-table">--</strong></span>
+                <small>Forno Alto</small>
+              </div>
+              <div class="mobile-categories">
+                <button class="chip active">Classicas</button>
+                <button class="chip">Especiais</button>
+                <button class="chip">Doces</button>
+              </div>
+              <div class="mobile-list">
+                <div class="mobile-item"><span>Margherita Trufada</span><strong>R$ 59</strong></div>
+                <div class="mobile-item"><span>Calabresa Crocante</span><strong>R$ 49</strong></div>
+                <div class="mobile-item"><span>Nutella com Morango</span><strong>R$ 47</strong></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section-space">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="label mb-2 text-center"><i class="bi bi-question-circle me-1"></i>FAQ</p>
+            <h2 class="h1 mb-4 text-center">Perguntas frequentes</h2>
+            <div class="accordion faq-accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">A pizzaria atende quais bairros?</button></h3>
+                <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Atendemos toda a regiao central e bairros proximos em ate 30 minutos.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Tem opcao sem lactose e vegana?</button></h3>
+                <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Sim, temos massa tradicional e opcoes especiais sob consulta.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">O modo claro/escuro fica salvo?</button></h3>
+                <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Sim, a preferencia de tema fica salva no seu navegador.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pedido" class="section-space stripe">
+      <div class="container">
+        <div class="order-wrap">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <p class="label mb-2"><i class="bi bi-send me-1"></i>Pedido rapido</p>
+              <h2 class="h1 mb-3">Monte seu pedido em menos de 1 minuto</h2>
+              <p class="text-muted mb-0">Preencha os dados e nossa equipe confirma pelo WhatsApp.</p>
+            </div>
+            <div class="col-lg-6">
+              <form id="order-form" class="row g-3" novalidate>
+                <div class="col-12"><input id="name" class="form-control" type="text" placeholder="Nome"><div class="invalid-feedback"></div></div>
+                <div class="col-md-6"><input id="phone" class="form-control" type="tel" placeholder="WhatsApp"><div class="invalid-feedback"></div></div>
+                <div class="col-md-6"><input id="flavor" class="form-control" type="text" placeholder="Sabor escolhido"><div class="invalid-feedback"></div></div>
+                <div class="col-12 d-grid"><button id="order-submit" class="btn btn-cta btn-lg" type="submit">Confirmar pedido</button></div>
+                <div class="col-12"><p id="order-feedback" class="form-feedback mb-0" aria-live="polite"></p></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="mobile-order-bar d-lg-none">
+    <a href="#sabores" class="btn btn-sm btn-outline-secondary"><i class="bi bi-book me-1"></i>Cardapio</a>
+    <a href="#pedido" class="btn btn-sm btn-cta"><i class="bi bi-bag-check me-1"></i>Pedir</a>
+  </div>
+
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <small>&copy; 2026 Forno Alto Pizzaria. Template vitrine para delivery.</small>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

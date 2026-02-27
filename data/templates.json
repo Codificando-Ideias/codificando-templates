@@ -1,0 +1,156 @@
+﻿[
+  {
+    "name": "Landing Page Corporativa",
+    "slug": "landing-page",
+    "segment": "Corporativo",
+    "description": "Template de captação com foco B2B e conversão.",
+    "featured": true
+  },
+  {
+    "name": "Newsletter Editorial",
+    "slug": "newsletter",
+    "segment": "Mídia",
+    "description": "Modelo editorial para newsletters com inscrição e arquivo.",
+    "featured": true
+  },
+  {
+    "name": "Site Institucional Fitness",
+    "slug": "site-institucional",
+    "segment": "Fitness",
+    "description": "Site institucional dark para academias e centros de performance.",
+    "featured": true
+  },
+  {
+    "name": "Admin Dashboard",
+    "slug": "admin-dashboard",
+    "segment": "SaaS",
+    "description": "Painel administrativo dark minimal com métricas e gestão.",
+    "featured": true
+  },
+  {
+    "name": "App Showcase",
+    "slug": "app-showcase",
+    "segment": "Tecnologia",
+    "description": "Vitrine premium para lançamento de app ou produto digital.",
+    "featured": true
+  },
+  {
+    "name": "Portfolio Album",
+    "slug": "portfolio-album",
+    "segment": "Criativo",
+    "description": "Portfólio de imagens com filtros e visualização em modal.",
+    "featured": false
+  },
+  {
+    "name": "Resume Card",
+    "slug": "resume-card",
+    "segment": "Pessoal",
+    "description": "Currículo online e cartão de visita digital para profissionais.",
+    "featured": false
+  },
+  {
+    "name": "Pizzaria Showcase",
+    "slug": "pizzaria-showcase",
+    "segment": "Alimentação",
+    "description": "Template de pizzaria com cardápio filtrável e pedido rápido.",
+    "featured": false
+  },
+  {
+    "name": "Confeitaria Bolos",
+    "slug": "confeitaria-bolos",
+    "segment": "Confeitaria",
+    "description": "Vitrine criativa para confeitaria com coleção de bolos.",
+    "featured": false
+  },
+  {
+    "name": "Petshop Hub",
+    "slug": "petshop-hub",
+    "segment": "Pet",
+    "description": "Interface estilo hub para serviços, planos e agendamento pet.",
+    "featured": false
+  },
+  {
+    "name": "Clínica Mini App",
+    "slug": "clinica-miniapp",
+    "segment": "Saúde",
+    "description": "Site mobile-first em formato mini aplicativo para clínicas.",
+    "featured": false
+  },
+  {
+    "name": "Institucional IA",
+    "slug": "institucional-ia",
+    "segment": "Inteligência Artificial",
+    "description": "Institucional mobile-first para software de IA e inovação.",
+    "featured": true
+  },
+  {
+    "name": "Hamburgueria App",
+    "slug": "hamburgueria-app",
+    "segment": "Alimentação",
+    "description": "Arquitetura estilo app com navegação fixa para hamburguerias.",
+    "featured": false
+  },
+  {
+    "name": "Vidraçaria Scroll",
+    "slug": "vidracaria-scroll",
+    "segment": "Construção",
+    "description": "Layout em seções 100vh com navegação por scroll.",
+    "featured": false
+  },
+  {
+    "name": "Contábil Grid",
+    "slug": "contabil-grid",
+    "segment": "Contabilidade",
+    "description": "Grid assimétrico institucional para escritórios contábeis.",
+    "featured": false
+  },
+  {
+    "name": "Restaurante Sidebar",
+    "slug": "restaurante-sidebar",
+    "segment": "Alimentação",
+    "description": "Site institucional com sidebar fixa e navegação direta.",
+    "featured": false
+  },
+  {
+    "name": "Imobiliária Typography",
+    "slug": "imobiliaria-typography",
+    "segment": "Imobiliário",
+    "description": "Proposta minimalista tipográfica para imobiliárias.",
+    "featured": false
+  },
+  {
+    "name": "Tattoo Carousel",
+    "slug": "tattoo-carousel",
+    "segment": "Estúdio",
+    "description": "Template para estúdio de tattoo com cards em carrossel horizontal.",
+    "featured": false
+  },
+  {
+    "name": "Odonto Split",
+    "slug": "odonto-split",
+    "segment": "Saúde",
+    "description": "Layout em blocos alternados com imagem dominante para odontologia.",
+    "featured": false
+  },
+  {
+    "name": "Agência Drawer",
+    "slug": "agencia-drawer",
+    "segment": "Marketing Digital",
+    "description": "Estrutura institucional com menu lateral expansível.",
+    "featured": false
+  },
+  {
+    "name": "Solar Accordion",
+    "slug": "solar-accordion",
+    "segment": "Energia Solar",
+    "description": "Página mobile-first em estrutura de acordeão expansível.",
+    "featured": false
+  },
+  {
+    "name": "Escola Tabs",
+    "slug": "escola-tabs",
+    "segment": "Educação",
+    "description": "Institucional para cursos com navegação por abas.",
+    "featured": false
+  }
+]

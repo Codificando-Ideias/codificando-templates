@@ -1,0 +1,114 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Clinica Mini App | VitaCare</title>
+  <meta name="description" content="Template mobile-first estilo mini aplicativo para clinicas com tema claro/escuro.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-theme="light">
+  <div class="app-phone">
+    <header class="app-topbar">
+      <div>
+        <small class="text-muted">Bem-vindo</small>
+        <h1 class="h5 mb-0">VitaCare Clinica</h1>
+      </div>
+      <button id="theme-toggle" class="icon-btn" type="button" aria-label="Alternar tema">
+        <i class="bi bi-moon-stars"></i>
+      </button>
+    </header>
+
+    <main class="app-content">
+      <section class="view active" data-view="home">
+        <article class="hero-card">
+          <p class="chip mb-2"><i class="bi bi-heart-pulse me-1"></i>Atendimento humanizado</p>
+          <h2 class="h4 mb-2">Cuidados medicos em um fluxo simples</h2>
+          <p class="text-muted mb-3">Agenda, consultas e retorno no mesmo app da clinica.</p>
+          <button class="btn btn-primary-soft w-100 go-view" data-target="booking" type="button">Agendar consulta</button>
+        </article>
+
+        <div class="quick-grid mt-3">
+          <button class="quick-item go-view" data-target="services" type="button"><i class="bi bi-clipboard2-pulse"></i><span>Especialidades</span></button>
+          <button class="quick-item go-view" data-target="team" type="button"><i class="bi bi-people"></i><span>Equipe</span></button>
+          <button class="quick-item" type="button"><i class="bi bi-geo-alt"></i><span>Unidades</span></button>
+          <button class="quick-item" type="button"><i class="bi bi-telephone"></i><span>Contato</span></button>
+        </div>
+
+        <article class="info-card mt-3">
+          <div class="d-flex justify-content-between align-items-center">
+            <h3 class="h6 mb-0">Proximos horarios</h3>
+            <small class="text-muted">Hoje</small>
+          </div>
+          <div class="slot"><span>Cardiologia</span><strong>10:40</strong></div>
+          <div class="slot"><span>Clinico geral</span><strong>14:10</strong></div>
+          <div class="slot"><span>Dermatologia</span><strong>16:30</strong></div>
+        </article>
+      </section>
+
+      <section class="view" data-view="services">
+        <div class="section-head">
+          <h2 class="h6 mb-0">Especialidades</h2>
+          <button class="link-btn go-view" data-target="home" type="button">Voltar</button>
+        </div>
+        <div class="service-list">
+          <article class="service-item"><i class="bi bi-heart"></i><div><h3>Cardiologia</h3><p>Avaliacao e acompanhamento cardiaco.</p></div></article>
+          <article class="service-item"><i class="bi bi-lungs"></i><div><h3>Pneumologia</h3><p>Diagnostico e plano respiratorio.</p></div></article>
+          <article class="service-item"><i class="bi bi-eye"></i><div><h3>Oftalmologia</h3><p>Exames de rotina e visao funcional.</p></div></article>
+          <article class="service-item"><i class="bi bi-bandaid"></i><div><h3>Dermatologia</h3><p>Cuidados clinicos e esteticos.</p></div></article>
+        </div>
+      </section>
+
+      <section class="view" data-view="team">
+        <div class="section-head">
+          <h2 class="h6 mb-0">Equipe medica</h2>
+          <button class="link-btn go-view" data-target="home" type="button">Voltar</button>
+        </div>
+        <div class="doctor-list">
+          <article class="doctor-item"><div><h3>Dra. Clara Mota</h3><p>Cardiologista</p></div><span>CRM 12345</span></article>
+          <article class="doctor-item"><div><h3>Dr. Rafael Souza</h3><p>Clinico Geral</p></div><span>CRM 93422</span></article>
+          <article class="doctor-item"><div><h3>Dra. Vanessa Lima</h3><p>Dermatologista</p></div><span>CRM 18440</span></article>
+        </div>
+      </section>
+
+      <section class="view" data-view="booking">
+        <div class="section-head">
+          <h2 class="h6 mb-0">Agendar consulta</h2>
+          <button class="link-btn go-view" data-target="home" type="button">Voltar</button>
+        </div>
+        <form id="booking-form" class="row g-2" novalidate>
+          <div class="col-12"><input id="name" class="form-control" type="text" placeholder="Nome completo"><div class="invalid-feedback"></div></div>
+          <div class="col-12"><input id="phone" class="form-control" type="tel" placeholder="WhatsApp"><div class="invalid-feedback"></div></div>
+          <div class="col-12">
+            <select id="specialty" class="form-select">
+              <option value="">Especialidade</option>
+              <option>Cardiologia</option>
+              <option>Clinico geral</option>
+              <option>Dermatologia</option>
+            </select>
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col-12 d-grid"><button id="booking-submit" class="btn btn-primary-soft" type="submit">Confirmar agendamento</button></div>
+          <div class="col-12"><p id="booking-feedback" class="form-feedback mb-0" aria-live="polite"></p></div>
+        </form>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="tab-btn active" data-view="home" type="button"><i class="bi bi-house"></i><span>Inicio</span></button>
+      <button class="tab-btn" data-view="services" type="button"><i class="bi bi-clipboard2-heart"></i><span>Servicos</span></button>
+      <button class="tab-btn" data-view="team" type="button"><i class="bi bi-person-badge"></i><span>Equipe</span></button>
+      <button class="tab-btn" data-view="booking" type="button"><i class="bi bi-calendar2-check"></i><span>Agendar</span></button>
+    </nav>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,280 @@
+﻿:root {
+  --ad-bg: #0c1118;
+  --ad-surface: #131a24;
+  --ad-surface-2: #1a2330;
+  --ad-line: #273346;
+  --ad-text: #e8edf5;
+  --ad-muted: #95a1b3;
+  --ad-accent: #31d0aa;
+}
+
+body {
+  margin: 0;
+  font-family: "IBM Plex Sans", "Segoe UI", sans-serif;
+  background: var(--ad-bg);
+  color: var(--ad-text);
+}
+
+.app-shell {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 260px;
+  background: #0f151f;
+  border-right: 1px solid var(--ad-line);
+  padding: 1rem;
+  position: sticky;
+  top: 0;
+  height: 100vh;
+}
+
+.sidebar-head {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
+}
+
+.brand-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: var(--ad-accent);
+}
+
+.sidebar-nav .nav-link {
+  color: #aeb8c7;
+  border-radius: 0.5rem;
+  padding: 0.55rem 0.7rem;
+  margin-bottom: 0.2rem;
+}
+
+.sidebar-nav .nav-link.active,
+.sidebar-nav .nav-link:hover {
+  background: var(--ad-surface-2);
+  color: #ffffff;
+}
+
+.main-content {
+  flex: 1;
+  padding: 1.2rem;
+}
+
+.topbar {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  justify-content: space-between;
+  margin-bottom: 1rem;
+}
+
+.section-block {
+  margin-bottom: 1rem;
+}
+
+.metric-card,
+.panel {
+  background: var(--ad-surface);
+  border: 1px solid var(--ad-line);
+  border-radius: 0.8rem;
+  padding: 1rem;
+}
+
+.metric-label {
+  color: var(--ad-muted);
+  margin-bottom: 0.3rem;
+}
+
+.metric-value {
+  font-size: 1.7rem;
+  font-weight: 700;
+  margin-bottom: 0.2rem;
+}
+
+.metric-meta {
+  color: #7f8da2;
+}
+
+.panel-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.8rem;
+}
+
+.badge-soft {
+  background: rgba(49, 208, 170, 0.13);
+  border: 1px solid rgba(49, 208, 170, 0.35);
+  color: #9ef2dd;
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+}
+
+.period-filter .btn {
+  border-color: #2f3b4e;
+  color: #a9b7cb;
+}
+
+.period-filter .btn:hover {
+  border-color: #3a4a60;
+  color: #d5deea;
+}
+
+.period-filter .btn.active {
+  background: #233043;
+  border-color: #3b4c62;
+  color: #f2f7ff;
+}
+
+.chart-wrap {
+  min-height: 220px;
+  border: 1px dashed #2f3b4e;
+  border-radius: 0.6rem;
+  padding: 0.8rem;
+}
+
+.chart-wrap canvas {
+  width: 100% !important;
+  height: 200px !important;
+}
+
+.goal-item {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 0.4rem;
+}
+
+.dark-progress {
+  height: 8px;
+  background: #0f151f;
+}
+
+.dark-progress .progress-bar {
+  background: var(--ad-accent);
+}
+
+.btn-accent {
+  background: var(--ad-accent);
+  border-color: var(--ad-accent);
+  color: #071510;
+  font-weight: 600;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background: #28b594;
+  border-color: #28b594;
+  color: #071510;
+}
+
+.pill {
+  padding: 0.2rem 0.45rem;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+
+.pill.ok {
+  background: rgba(49, 208, 170, 0.15);
+  color: #9ef2dd;
+}
+
+.pill.warn {
+  background: rgba(245, 173, 76, 0.18);
+  color: #ffd393;
+}
+
+.form-control {
+  background: #0f151f;
+  border: 1px solid #2a3547;
+  color: #e8edf5;
+}
+
+.form-control::placeholder {
+  color: #78859a;
+}
+
+.form-control:focus {
+  background: #0f151f;
+  color: #e8edf5;
+  border-color: #31d0aa;
+  box-shadow: 0 0 0 0.2rem rgba(49, 208, 170, 0.15);
+}
+
+.form-select {
+  background-color: #0f151f;
+  border: 1px solid #2a3547;
+  color: #e8edf5;
+}
+
+.form-select:focus {
+  border-color: #31d0aa;
+  box-shadow: 0 0 0 0.2rem rgba(49, 208, 170, 0.15);
+}
+
+.form-label {
+  color: #a7b3c5;
+  font-size: 0.86rem;
+  margin-bottom: 0.35rem;
+}
+
+.form-control.is-invalid,
+.form-select.is-invalid {
+  border-color: #dc3545;
+}
+
+.form-check-input {
+  background-color: #0f151f;
+  border-color: #2d3b4f;
+}
+
+.form-check-input:checked {
+  background-color: #31d0aa;
+  border-color: #31d0aa;
+}
+
+.form-check-label {
+  color: #a7b3c5;
+}
+
+.form-feedback {
+  min-height: 1.4rem;
+  font-weight: 600;
+}
+
+.form-feedback.is-success {
+  color: #8ef0d7;
+}
+
+.form-feedback.is-error {
+  color: #ff9eaa;
+}
+
+.btn.loading {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.text-muted {
+  color: var(--ad-muted) !important;
+}
+
+@media (max-width: 991.98px) {
+  .sidebar {
+    position: fixed;
+    left: -280px;
+    z-index: 1050;
+    transition: left 0.2s ease;
+  }
+
+  .sidebar.open {
+    left: 0;
+  }
+
+  .main-content {
+    width: 100%;
+  }
+}

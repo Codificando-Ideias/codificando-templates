@@ -1,0 +1,95 @@
+﻿name: Generate Thumbnails
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - "data/templates.json"
+      - "**/index.html"
+      - ".github/workflows/generate-thumbnails.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  thumbs:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Install Playwright
+        run: |
+          npm init -y
+          npm i playwright
+          npx playwright install --with-deps chromium
+
+      - name: Start static server
+        run: |
+          python3 -m http.server 5500 &
+          echo $! > server.pid
+
+      - name: Generate previews
+        run: |
+          node - <<'NODE'
+          const fs = require('fs');
+          const path = require('path');
+          const { chromium } = require('playwright');
+
+          const root = process.cwd();
+          const templates = JSON.parse(fs.readFileSync(path.join(root, 'data', 'templates.json'), 'utf8'));
+
+          (async () => {
+            const browser = await chromium.launch({ headless: true });
+            const page = await browser.newPage({ viewport: { width: 1280, height: 720 } });
+
+            for (const t of templates) {
+              const slug = t.slug;
+              const dir = path.join(root, slug);
+              if (!fs.existsSync(dir)) {
+                console.log(`[skip] missing folder: ${slug}`);
+                continue;
+              }
+
+              const url = `http://127.0.0.1:5500/${slug}/`;
+              const out = path.join(dir, 'preview.png');
+
+              try {
+                await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 });
+                await page.screenshot({ path: out, fullPage: false });
+                console.log(`[ok] ${slug}/preview.png`);
+              } catch (e) {
+                console.log(`[error] ${slug}: ${e.message}`);
+              }
+            }
+
+            await browser.close();
+          })();
+          NODE
+
+      - name: Stop static server
+        if: always()
+        run: |
+          if [ -f server.pid ]; then
+            kill $(cat server.pid) || true
+          fi
+
+      - name: Commit previews
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
+          if [ -n "$(find . -type f -name 'preview.png' -print -quit)" ] && [ -n "$(git status --porcelain)" ]; then
+            find . -type f -name "preview.png" -print0 | xargs -0 git add
+            git commit -m "chore: update template thumbnails"
+            git push
+          else
+            echo "No thumbnail changes"
+          fi

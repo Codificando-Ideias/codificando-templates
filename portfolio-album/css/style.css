@@ -1,0 +1,256 @@
+﻿:root {
+  --bg: #0f1115;
+  --surface: #171b22;
+  --surface-2: #202631;
+  --line: #303848;
+  --text: #edf1f7;
+  --muted: #9da8b8;
+  --accent: #f6b64f;
+}
+
+body[data-theme="light"] {
+  --bg: #f6f8fc;
+  --surface: #ffffff;
+  --surface-2: #eef2f8;
+  --line: #d6deeb;
+  --text: #1c2430;
+  --muted: #5f6d81;
+  --accent: #d18c1d;
+}
+
+body {
+  font-family: "Space Grotesk", "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+}
+
+.navbar {
+  background: color-mix(in srgb, var(--bg) 88%, transparent);
+  border-bottom: 1px solid var(--line);
+  backdrop-filter: blur(6px);
+}
+
+.navbar-brand,
+.nav-link {
+  color: var(--text);
+}
+
+.nav-link:hover,
+.nav-link.active {
+  color: var(--accent);
+}
+
+.navbar-toggler {
+  border-color: var(--line);
+}
+
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+body[data-theme="light"] .navbar-toggler-icon {
+  filter: none;
+}
+
+.section-space {
+  padding: 90px 0;
+}
+
+.hero {
+  padding-top: 130px;
+}
+
+.eyebrow {
+  color: var(--accent);
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.text-muted {
+  color: var(--muted) !important;
+}
+
+.btn-accent {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #10151f;
+  font-weight: 700;
+}
+
+.btn-accent:hover,
+.btn-accent:focus {
+  background: #e1a338;
+  border-color: #e1a338;
+  color: #10151f;
+}
+
+.stat-card,
+.image-card,
+.mini-card,
+.contact-wrap,
+.modal-content {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  border-radius: 12px;
+}
+
+.stat-card {
+  padding: 1.1rem;
+}
+
+.section-muted {
+  background: var(--surface-2);
+}
+
+.filter-group .btn {
+  border-color: var(--line);
+  color: var(--text);
+}
+
+.filter-group .btn.active {
+  background: var(--surface);
+  border-color: var(--accent);
+  color: var(--accent);
+}
+
+.image-card {
+  overflow: hidden;
+  cursor: pointer;
+}
+
+.image-card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  transition: transform 0.25s ease;
+}
+
+.image-card:hover img {
+  transform: scale(1.04);
+}
+
+.image-meta {
+  padding: 0.75rem 0.85rem;
+}
+
+.mini-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.8rem;
+}
+
+.mini-card {
+  padding: 1rem;
+}
+
+.faq-accordion .accordion-item {
+  border: 1px solid var(--line);
+  border-radius: 10px;
+  overflow: hidden;
+  margin-bottom: 0.7rem;
+}
+
+.faq-accordion .accordion-button {
+  background: var(--surface);
+  color: var(--text);
+  font-weight: 600;
+}
+
+.faq-accordion .accordion-button:not(.collapsed) {
+  background: var(--surface-2);
+  color: var(--accent);
+  box-shadow: none;
+}
+
+.faq-accordion .accordion-button:focus {
+  box-shadow: 0 0 0 0.2rem rgba(246, 182, 79, 0.2);
+}
+
+.faq-accordion .accordion-body {
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.contact-wrap {
+  padding: 1.4rem;
+}
+
+.form-control {
+  background: color-mix(in srgb, var(--surface) 85%, black);
+  border: 1px solid var(--line);
+  color: var(--text);
+}
+
+body[data-theme="light"] .form-control {
+  background: #ffffff;
+}
+
+.form-control:focus {
+  background: inherit;
+  color: inherit;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 0.2rem rgba(246, 182, 79, 0.2);
+}
+
+.form-control.is-invalid {
+  border-color: #dc3545;
+}
+
+.form-feedback {
+  min-height: 1.3rem;
+  font-weight: 600;
+}
+
+.form-feedback.is-success {
+  color: #3cbf8f;
+}
+
+.form-feedback.is-error {
+  color: #ff7f90;
+}
+
+.btn.loading {
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.modal-content {
+  color: var(--text);
+}
+
+body[data-theme="light"] .btn-close {
+  filter: none;
+}
+
+body[data-theme="dark"] .btn-close {
+  filter: invert(1);
+}
+
+.footer {
+  border-top: 1px solid var(--line);
+  background: var(--surface);
+  color: var(--muted);
+}
+
+.reveal-item {
+  opacity: 0;
+  transform: translateY(14px);
+}
+
+.reveal-item.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+  transition: opacity 0.42s ease, transform 0.42s ease;
+}
+
+@media (max-width: 991.98px) {
+  .section-space {
+    padding: 72px 0;
+  }
+
+  .mini-grid {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,41 +1,300 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Newsletter</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Newsletter | Brief Semanal</title>
+  <meta name="description" content="Template estatico de newsletter com visual editorial, ideal para GitHub Pages.">
+  <meta name="keywords" content="newsletter, template estatico, bootstrap 5, github pages, edicao semanal, marketing">
+  <meta name="author" content="Brief Semanal">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Newsletter | Brief Semanal">
+  <meta property="og:description" content="Template editorial para newsletter com estrutura de edicao, topicos, autores e arquivo.">
+  <meta property="og:url" content="https://example.com/newsletter">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1486312338219-ce68d2c6f44d?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Newsletter | Brief Semanal">
+  <meta name="twitter:description" content="Modelo pronto para newsletter em GitHub Pages com visual editorial e foco em inscricao.">
+  <link rel="canonical" href="https://example.com/newsletter">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;500;600;700&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Template</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+    <a class="navbar-brand" href="#inicio">Brief Semanal</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Alternar navegacao">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="nav">
       <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#edicao">Edicao</a></li>
+        <li class="nav-item"><a class="nav-link" href="#topicos">Topicos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#autores">Autores</a></li>
+        <li class="nav-item"><a class="nav-link" href="#arquivo">Arquivo</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-sm btn-accent mt-2 mt-lg-0" href="#inscricao">Assinar</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<section class="hero d-flex align-items-center text-center text-white">
-  <div class="container">
-    <h1 class="display-4">Newsletter</h1>
-    <p class="lead">Template base com Bootstrap 5 + CSS3 + jQuery</p>
-    <a href="#" class="btn btn-primary btn-lg">Saiba Mais</a>
-  </div>
-</section>
+<main>
+  <section id="inicio" class="hero">
+    <div class="container">
+      <div class="row align-items-center g-5">
+        <div class="col-lg-7">
+          <p class="hero-kicker mb-3">EDICAO #024 • 27 FEV 2026</p>
+          <h1 class="display-4 mb-3">Insights diretos para quem lidera marketing e produto</h1>
+          <p class="lead mb-4">Uma newsletter semanal com curadoria de tendencias, cases e movimentos do mercado digital.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a class="btn btn-accent btn-lg" href="#inscricao">Receber proximas edicoes</a>
+            <a class="btn btn-outline-dark btn-lg" href="#edicao">Ler esta edicao</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <article class="edition-card reveal-item">
+            <p class="edition-label">Nesta edicao</p>
+            <h2 class="h4 mb-3">3 sinais de mudanca no comportamento de compra B2B</h2>
+            <ul class="edition-list mb-4">
+              <li>Como IA alterou o funil de pesquisa</li>
+              <li>Qual formato de conteudo aumentou conversao</li>
+              <li>O que times enxutos estao priorizando em 2026</li>
+            </ul>
+            <a href="#topicos" class="link-highlight">Explorar topicos completos</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer class="bg-dark text-white text-center py-3">
-  <div class="container">
-    <small>© 2026 Template Preview</small>
+  <section id="edicao" class="section-space bg-paper">
+    <div class="container">
+      <div class="row align-items-center g-4">
+        <div class="col-lg-4">
+          <p class="section-label mb-2">Resumo editorial</p>
+          <h2 class="section-title mb-0">Leitura de 5 minutos</h2>
+        </div>
+        <div class="col-lg-8">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <article class="story-card reveal-item h-100">
+                <p class="story-meta mb-2">TENDENCIA</p>
+                <h3 class="h5 mb-2">Conteudo curto voltou ao centro da estrategia</h3>
+                <p class="mb-0">Marcas com narrativas objetivas estao aumentando alcance qualificado em canais organicos.</p>
+              </article>
+            </div>
+            <div class="col-md-6">
+              <article class="story-card reveal-item h-100">
+                <p class="story-meta mb-2">CASE</p>
+                <h3 class="h5 mb-2">Operacao D2C reduziu CAC em 18%</h3>
+                <p class="mb-0">A combinacao de CRM e automacao de segmentos trouxe previsibilidade no pipeline.</p>
+              </article>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="topicos" class="section-space">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-7">
+          <p class="section-label mb-2">Topicos da semana</p>
+          <h2 class="section-title">Assuntos que merecem sua atencao</h2>
+        </div>
+        <div class="col-lg-5 d-flex align-items-end justify-content-lg-end">
+          <div class="topic-filters mt-3 mt-lg-0" role="group" aria-label="Filtro de topicos">
+            <button type="button" class="btn btn-sm btn-filter active" data-filter="all">Todos</button>
+            <button type="button" class="btn btn-sm btn-filter" data-filter="estrategia">Estrategia</button>
+            <button type="button" class="btn btn-sm btn-filter" data-filter="conteudo">Conteudo</button>
+            <button type="button" class="btn btn-sm btn-filter" data-filter="performance">Performance</button>
+          </div>
+        </div>
+      </div>
+      <div class="row g-4" id="topics-grid">
+        <div class="col-md-4 topic-item" data-topic="estrategia">
+          <article class="topic-card reveal-item h-100">
+            <h3 class="h5">Estrategia</h3>
+            <p class="mb-0">Como priorizar canais sem ampliar custos fixos do time.</p>
+          </article>
+        </div>
+        <div class="col-md-4 topic-item" data-topic="conteudo">
+          <article class="topic-card reveal-item h-100">
+            <h3 class="h5">Conteudo</h3>
+            <p class="mb-0">Formatos editoriais que aumentam tempo medio de leitura.</p>
+          </article>
+        </div>
+        <div class="col-md-4 topic-item" data-topic="performance">
+          <article class="topic-card reveal-item h-100">
+            <h3 class="h5">Performance</h3>
+            <p class="mb-0">Metrica principal para avaliar qualidade de audiencia recorrente.</p>
+          </article>
+        </div>
+        <div class="col-md-4 topic-item" data-topic="estrategia">
+          <article class="topic-card reveal-item h-100">
+            <h3 class="h5">Planejamento</h3>
+            <p class="mb-0">Checklist rapido para montar pauta de conteudo orientada por meta.</p>
+          </article>
+        </div>
+        <div class="col-md-4 topic-item" data-topic="conteudo">
+          <article class="topic-card reveal-item h-100">
+            <h3 class="h5">Distribuicao</h3>
+            <p class="mb-0">Como reciclar um insight em multiplos formatos sem perder qualidade.</p>
+          </article>
+        </div>
+        <div class="col-md-4 topic-item" data-topic="performance">
+          <article class="topic-card reveal-item h-100">
+            <h3 class="h5">Mensuracao</h3>
+            <p class="mb-0">Indicador simples para cruzar engajamento e impacto em pipeline.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="autores" class="section-space bg-paper">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-7">
+          <p class="section-label mb-2">Colunistas</p>
+          <h2 class="section-title">Quem escreve a Brief Semanal</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="author-card reveal-item h-100">
+            <h3 class="h5 mb-1">Marina Costa</h3>
+            <p class="author-role mb-2">Estrategia de crescimento</p>
+            <p class="mb-0">Analisa movimentos de aquisicao e posicionamento para times B2B e SaaS.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="author-card reveal-item h-100">
+            <h3 class="h5 mb-1">Rafael Neves</h3>
+            <p class="author-role mb-2">Conteudo e distribuicao</p>
+            <p class="mb-0">Traduz tendencias editoriais em frameworks praticos para operacao semanal.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="author-card reveal-item h-100">
+            <h3 class="h5 mb-1">Camila Duarte</h3>
+            <p class="author-role mb-2">Analytics e performance</p>
+            <p class="mb-0">Foca em metricas de qualidade de audiencia e eficiencia de funil.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="arquivo" class="section-space">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-7">
+          <p class="section-label mb-2">Arquivo</p>
+          <h2 class="section-title">Edicoes anteriores</h2>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-4">
+          <article class="archive-card reveal-item h-100">
+            <p class="story-meta mb-2">Edicao #023</p>
+            <h3 class="h5 mb-2">Como lideres B2B estao ajustando metas no 1o trimestre</h3>
+            <a href="#" class="link-highlight">Ler resumo</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="archive-card reveal-item h-100">
+            <p class="story-meta mb-2">Edicao #022</p>
+            <h3 class="h5 mb-2">O impacto de IA no ciclo de decisao de compra</h3>
+            <a href="#" class="link-highlight">Ler resumo</a>
+          </article>
+        </div>
+        <div class="col-md-6 col-lg-4">
+          <article class="archive-card reveal-item h-100">
+            <p class="story-meta mb-2">Edicao #021</p>
+            <h3 class="h5 mb-2">Quais canais sustentaram CAC estavel em 2026</h3>
+            <a href="#" class="link-highlight">Ler resumo</a>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section-space bg-paper">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <p class="section-label mb-2 text-center">FAQ</p>
+          <h2 class="section-title mb-4 text-center">Perguntas frequentes</h2>
+          <div class="accordion faq-accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                  Este template funciona em GitHub Pages sem servidor?
+                </button>
+              </h3>
+              <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Sim. Todo o projeto e estatico e pode ser publicado diretamente no GitHub Pages.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                  Posso conectar o formulario de inscricao em uma API?
+                </button>
+              </h3>
+              <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Pode. A validacao front-end em jQuery ja esta pronta e voce pode substituir a simulacao por chamada real.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                  Como manter historico de edicoes antigas?
+                </button>
+              </h3>
+              <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Use a secao Arquivo para listar resumos e links para paginas dedicadas de cada edicao.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="inscricao" class="section-space bg-paper">
+    <div class="container">
+      <div class="subscribe-wrap text-center reveal-item">
+        <p class="section-label mb-2">Inscricao gratuita</p>
+        <h2 class="section-title mb-3">Receba a proxima edicao no seu email</h2>
+        <p class="text-secondary mb-4">Sem spam. Apenas uma selecao semanal com insights acionaveis.</p>
+        <form id="subscribe-form" class="row g-2 justify-content-center" novalidate>
+          <div class="col-md-5">
+            <input type="email" id="subscriber-email" class="form-control form-control-lg" placeholder="seuemail@empresa.com">
+            <div class="invalid-feedback text-start"></div>
+          </div>
+          <div class="col-md-auto d-grid">
+            <button type="submit" id="subscribe-submit" class="btn btn-accent btn-lg px-4">Quero assinar</button>
+          </div>
+          <div class="col-12">
+            <p id="subscribe-feedback" class="form-feedback mb-0" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="footer py-4">
+  <div class="container text-center">
+    <small>&copy; 2026 Brief Semanal. Template newsletter para GitHub Pages.</small>
   </div>
 </footer>
 

@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Codificando Ideias | Inteligencia Aplicada</title>
+  <meta name="description" content="Site institucional mobile-first para software de inteligencia artificial da Codificando Ideias.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-theme="light">
+  <div class="app-wrap">
+    <header class="app-bar">
+      <button id="drawer-open" class="icon-button" type="button" aria-label="Abrir menu">
+        <i class="bi bi-grid-3x3-gap"></i>
+      </button>
+      <div class="brand-center">
+        <small>Codificando Ideias</small>
+        <strong>Inteligencia Aplicada</strong>
+      </div>
+      <button id="theme-toggle" class="icon-button" type="button" aria-label="Alternar tema">
+        <i class="bi bi-sun"></i>
+      </button>
+    </header>
+
+    <aside id="app-drawer" class="app-drawer" aria-hidden="true">
+      <div class="drawer-head">
+        <h2 class="h6 mb-1">Navegacao</h2>
+        <button id="drawer-close" class="icon-button" type="button" aria-label="Fechar menu">
+          <i class="bi bi-x-lg"></i>
+        </button>
+      </div>
+      <nav class="drawer-links">
+        <a href="#apresentacao" class="drawer-link"><i class="bi bi-lightning-charge"></i><span>Apresentacao</span></a>
+        <a href="#servicos" class="drawer-link"><i class="bi bi-diagram-3"></i><span>Servicos</span></a>
+        <a href="#diferenciais" class="drawer-link"><i class="bi bi-stars"></i><span>Diferenciais</span></a>
+        <a href="#contato" class="drawer-link"><i class="bi bi-chat-square-heart"></i><span>Contato</span></a>
+      </nav>
+    </aside>
+    <div id="drawer-overlay" class="drawer-overlay"></div>
+
+    <main class="app-main">
+      <section id="apresentacao" class="panel panel-hero reveal">
+        <p class="eyebrow mb-2">Tecnologia potencializando o humano</p>
+        <h1 class="h3 fw-bold mb-2">Software de IA para transformar decisao em acao</h1>
+        <p class="text-muted mb-3">A Codificando Ideias conecta dados, processos e times para aumentar eficiencia operacional com inteligencia aplicada.</p>
+        <div class="chip-row">
+          <span class="chip"><i class="bi bi-cpu me-1"></i>Automacao inteligente</span>
+          <span class="chip"><i class="bi bi-activity me-1"></i>Dados em tempo real</span>
+          <span class="chip"><i class="bi bi-people me-1"></i>Foco no humano</span>
+        </div>
+      </section>
+
+      <section id="servicos" class="panel reveal">
+        <div class="panel-head">
+          <h2 class="h6 mb-0">Servicos</h2>
+        </div>
+        <div class="service-track">
+          <article class="service-card">
+            <i class="bi bi-robot"></i>
+            <h3>Assistentes de IA</h3>
+            <p>Copilotos para atendimento, operacao e suporte com contexto do seu negocio.</p>
+          </article>
+          <article class="service-card">
+            <i class="bi bi-bar-chart-line"></i>
+            <h3>Analytics aplicado</h3>
+            <p>Dashboards que explicam performance e sugerem proximos passos.</p>
+          </article>
+          <article class="service-card">
+            <i class="bi bi-diagram-2"></i>
+            <h3>Integracao de fluxos</h3>
+            <p>Conexao entre sistemas para eliminar gargalos e retrabalho operacional.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="diferenciais" class="panel reveal">
+        <div class="panel-head">
+          <h2 class="h6 mb-0">Diferenciais</h2>
+        </div>
+
+        <div class="stats-grid">
+          <article><small>Produtividade</small><strong class="counter" data-target="37">0%</strong></article>
+          <article><small>Tempo de resposta</small><strong class="counter" data-target="52">0%</strong></article>
+          <article><small>Decisoes orientadas por dados</small><strong class="counter" data-target="89">0%</strong></article>
+        </div>
+
+        <div class="accordion-stack mt-3">
+          <article class="acc-item">
+            <button class="acc-trigger" type="button">
+              <span><i class="bi bi-person-gear me-1"></i>IA com contexto humano</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+            <div class="acc-content">Modelos treinados para apoiar equipes reais, respeitando processos e linguagem do time.</div>
+          </article>
+          <article class="acc-item">
+            <button class="acc-trigger" type="button">
+              <span><i class="bi bi-database-check me-1"></i>Dados como ativo estrategico</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+            <div class="acc-content">Estruturacao de dados para previsibilidade, governanca e melhoria continua.</div>
+          </article>
+          <article class="acc-item">
+            <button class="acc-trigger" type="button">
+              <span><i class="bi bi-lightbulb me-1"></i>Inovacao orientada a resultado</span>
+              <i class="bi bi-plus-lg"></i>
+            </button>
+            <div class="acc-content">Entregas enxutas, testadas e escalaveis para acelerar ganho de eficiencia.</div>
+          </article>
+        </div>
+      </section>
+
+      <section id="contato" class="panel reveal">
+        <div class="panel-head">
+          <h2 class="h6 mb-0">Contato</h2>
+        </div>
+        <form id="contact-form" class="row g-2" novalidate>
+          <div class="col-12">
+            <input id="name" class="form-control" type="text" placeholder="Seu nome">
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col-12">
+            <input id="email" class="form-control" type="email" placeholder="Seu email profissional">
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col-12">
+            <textarea id="message" class="form-control" rows="4" placeholder="Conte seu desafio de negocio"></textarea>
+            <div class="invalid-feedback"></div>
+          </div>
+          <div class="col-12 d-grid">
+            <button id="contact-submit" class="btn btn-primary-soft" type="submit"><i class="bi bi-send me-1"></i>Falar com especialista</button>
+          </div>
+          <div class="col-12">
+            <p id="contact-feedback" class="form-feedback mb-0" aria-live="polite"></p>
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <nav class="bottom-nav">
+      <button class="tab active" data-target="apresentacao" type="button"><i class="bi bi-lightning"></i><span>Inicio</span></button>
+      <button class="tab" data-target="servicos" type="button"><i class="bi bi-grid"></i><span>Servicos</span></button>
+      <button class="tab" data-target="diferenciais" type="button"><i class="bi bi-graph-up"></i><span>Diferenciais</span></button>
+      <button class="tab" data-target="contato" type="button"><i class="bi bi-chat-dots"></i><span>Contato</span></button>
+    </nav>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>

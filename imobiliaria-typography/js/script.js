@@ -1,0 +1,2 @@
+﻿// Interacoes de tema e navegacao
+$(function(){const k='imo_theme';const set=t=>$('body').attr('data-theme',t);set(localStorage.getItem(k)||'light');$('#themeToggle').on('click',()=>{const t=$('body').attr('data-theme')==='light'?'dark':'light';set(t);localStorage.setItem(k,t);});});

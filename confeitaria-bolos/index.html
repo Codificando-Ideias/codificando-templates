@@ -1,0 +1,171 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Doce Traco | Confeitaria de Bolos</title>
+  <meta name="description" content="Template criativo para confeitaria de bolos com tema claro/escuro e icones.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manjari:wght@400;700&family=Fraunces:wght@500;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-theme="light">
+  <header class="top-strip">
+    <div class="container d-flex justify-content-between align-items-center">
+      <small><i class="bi bi-geo-alt me-1"></i>Atendimento local e encomendas</small>
+      <button id="theme-toggle" class="btn btn-sm btn-outline-secondary" type="button">Tema</button>
+    </div>
+  </header>
+
+  <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio"><i class="bi bi-cake2 me-2"></i>Doce Traco</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Alternar navegacao">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="nav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link" href="#colecao">Colecao</a></li>
+          <li class="nav-item"><a class="nav-link" href="#processo">Processo</a></li>
+          <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+          <li class="nav-item ms-lg-2"><a class="btn btn-sm btn-cta mt-2 mt-lg-0" href="#pedido">Encomendar</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <main>
+    <section id="inicio" class="hero-grid">
+      <div class="container">
+        <div class="grid-shell">
+          <article class="tile tile-main reveal-item">
+            <p class="badge-label mb-2"><i class="bi bi-stars me-1"></i>Confeitaria autoral</p>
+            <h1 class="display-5 fw-bold mb-3">Bolos sob medida para momentos que pedem presenca</h1>
+            <p class="text-muted mb-4">Design com linguagem limpa, recheios artesanais e acabamento premium para aniversarios, casamentos e marcas.</p>
+            <div class="d-flex flex-wrap gap-2">
+              <a href="#colecao" class="btn btn-cta btn-lg"><i class="bi bi-images me-1"></i>Ver colecao</a>
+              <a href="#pedido" class="btn btn-outline-secondary btn-lg"><i class="bi bi-chat-heart me-1"></i>Pedir orcamento</a>
+            </div>
+          </article>
+
+          <article class="tile tile-kpis reveal-item">
+            <h2 class="h6 text-uppercase">Indicadores da semana</h2>
+            <div class="kpi-row"><span>Bolos entregues</span><strong class="counter" data-target="74">0</strong></div>
+            <div class="kpi-row"><span>Avaliacao media</span><strong><span class="counter" data-target="49">0</span>/5</strong></div>
+            <div class="kpi-row"><span>Pedidos recorrentes</span><strong class="counter" data-target="63">0%</strong></div>
+          </article>
+
+          <article class="tile tile-quote reveal-item">
+            <i class="bi bi-quote"></i>
+            <p class="mb-2">"O bolo ficou lindo, sabor impecavel e entrega no horario exato."</p>
+            <small class="text-muted">Cliente: Mariana P.</small>
+          </article>
+
+          <article class="tile tile-highlight reveal-item">
+            <h3 class="h5 mb-2"><i class="bi bi-gem me-1"></i>Assinatura da casa</h3>
+            <p class="mb-0">Bolo Red Velvet com creme de baunilha natural e frutas frescas.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="colecao" class="section-space">
+      <div class="container">
+        <div class="row mb-4 align-items-end">
+          <div class="col-lg-7">
+            <p class="badge-label mb-2"><i class="bi bi-collection me-1"></i>Colecao</p>
+            <h2 class="h1 mb-0">Linhas de bolos por estilo</h2>
+          </div>
+          <div class="col-lg-5 text-lg-end">
+            <div class="btn-group btn-group-sm filter-group" role="group" aria-label="Filtro bolos">
+              <button class="btn btn-outline-secondary active" data-filter="all" type="button">Todos</button>
+              <button class="btn btn-outline-secondary" data-filter="festa" type="button">Festa</button>
+              <button class="btn btn-outline-secondary" data-filter="casamento" type="button">Casamento</button>
+              <button class="btn btn-outline-secondary" data-filter="corporativo" type="button">Corporativo</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="row g-3" id="cake-grid">
+          <div class="col-md-6 col-xl-3 cake-item" data-category="festa"><article class="cake-card reveal-item"><i class="bi bi-balloon-heart"></i><h3 class="h6">Bolo Neon Party</h3><p class="text-muted mb-0">Camadas coloridas e acabamento vibrante.</p></article></div>
+          <div class="col-md-6 col-xl-3 cake-item" data-category="casamento"><article class="cake-card reveal-item"><i class="bi bi-flower1"></i><h3 class="h6">Bolo Wedding Soft</h3><p class="text-muted mb-0">Visual clean com flores naturais.</p></article></div>
+          <div class="col-md-6 col-xl-3 cake-item" data-category="corporativo"><article class="cake-card reveal-item"><i class="bi bi-briefcase"></i><h3 class="h6">Bolo Brand Launch</h3><p class="text-muted mb-0">Identidade visual da marca em pasta americana.</p></article></div>
+          <div class="col-md-6 col-xl-3 cake-item" data-category="festa"><article class="cake-card reveal-item"><i class="bi bi-cake"></i><h3 class="h6">Bolo Choco Crunch</h3><p class="text-muted mb-0">Chocolate 70% e crocante de avela.</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="processo" class="section-space section-band">
+      <div class="container">
+        <div class="row g-4">
+          <div class="col-lg-4"><article class="step-card reveal-item"><span>01</span><h3 class="h6">Briefing</h3><p class="mb-0">Entendemos evento, paleta e expectativa de sabor.</p></article></div>
+          <div class="col-lg-4"><article class="step-card reveal-item"><span>02</span><h3 class="h6">Proposta</h3><p class="mb-0">Enviamos composicao de design e opcoes de recheio.</p></article></div>
+          <div class="col-lg-4"><article class="step-card reveal-item"><span>03</span><h3 class="h6">Entrega</h3><p class="mb-0">Produzimos e entregamos com embalagem premium.</p></article></div>
+        </div>
+      </div>
+    </section>
+
+    <section id="faq" class="section-space">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <p class="badge-label text-center mb-2"><i class="bi bi-question-circle me-1"></i>FAQ</p>
+            <h2 class="h1 text-center mb-4">Duvidas frequentes</h2>
+            <div class="accordion faq-accordion" id="faqAccordion">
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">Qual o prazo minimo de encomenda?</button></h3>
+                <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Recomendamos 48h para bolos simples e 5 dias para projetos personalizados.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Vocês fazem bolo sem lactose?</button></h3>
+                <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Sim, temos linha sem lactose e opcoes com restricoes alimentares.</div></div>
+              </div>
+              <div class="accordion-item">
+                <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">Posso salvar meu tema preferido?</button></h3>
+                <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Sim, o modo claro/escuro fica salvo no navegador.</div></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pedido" class="section-space section-band">
+      <div class="container">
+        <div class="order-box">
+          <div class="row g-4 align-items-center">
+            <div class="col-lg-6">
+              <p class="badge-label mb-2"><i class="bi bi-envelope-heart me-1"></i>Pedido</p>
+              <h2 class="h1 mb-3">Solicite um bolo personalizado</h2>
+              <p class="text-muted mb-0">Envie os dados e retornamos com proposta de valor e disponibilidade de agenda.</p>
+            </div>
+            <div class="col-lg-6">
+              <form id="cake-form" class="row g-3" novalidate>
+                <div class="col-12"><input id="name" class="form-control" type="text" placeholder="Nome"><div class="invalid-feedback"></div></div>
+                <div class="col-md-6"><input id="email" class="form-control" type="email" placeholder="Email"><div class="invalid-feedback"></div></div>
+                <div class="col-md-6"><input id="event" class="form-control" type="text" placeholder="Tipo de evento"><div class="invalid-feedback"></div></div>
+                <div class="col-12 d-grid"><button id="cake-submit" class="btn btn-cta btn-lg" type="submit">Enviar pedido</button></div>
+                <div class="col-12"><p id="cake-feedback" class="form-feedback mb-0" aria-live="polite"></p></div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer py-4">
+    <div class="container text-center">
+      <small>&copy; 2026 Doce Traco Confeitaria. Template vitrine de bolos.</small>
+    </div>
+  </footer>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>

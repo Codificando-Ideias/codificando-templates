@@ -1,0 +1,71 @@
+:root {
+  --bg: #f8f9fa;
+  --surface: #ffffff;
+  --line: #dce3eb;
+  --text: #212529;
+  --muted: #6c757d;
+}
+
+body[data-theme="dark"] {
+  --bg: #101826;
+  --surface: #182233;
+  --line: #304257;
+  --text: #edf2f7;
+  --muted: #a8b3c2;
+}
+
+body {
+  background: var(--bg);
+  color: var(--text);
+}
+
+header {
+  border-color: var(--line) !important;
+}
+
+.text-muted {
+  color: var(--muted) !important;
+}
+
+.form-control,
+.form-select {
+  background: var(--surface);
+  border-color: var(--line);
+  color: var(--text);
+}
+
+.form-control::placeholder {
+  color: var(--muted);
+}
+
+.form-control:focus,
+.form-select:focus {
+  background: var(--surface);
+  color: var(--text);
+}
+
+.template-card {
+  background: var(--surface);
+  border: 1px solid var(--line);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.template-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.16);
+}
+
+.card-title,
+.card-text {
+  color: var(--text);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+body[data-theme="dark"] .btn-outline-dark {
+  color: var(--text);
+  border-color: var(--line);
+}

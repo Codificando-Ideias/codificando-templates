@@ -1,41 +1,320 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Site Institucional</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="./css/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Site Institucional | Flux Fitness</title>
+  <meta name="description" content="Template institucional dark minimal para empresas fitness em GitHub Pages.">
+  <meta name="keywords" content="site institucional, fitness, academia, template dark, bootstrap 5, github pages">
+  <meta name="author" content="Flux Fitness">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Flux Fitness | Performance Center">
+  <meta property="og:description" content="Template institucional dark e minimalista para negocios fitness.">
+  <meta property="og:url" content="https://example.com/site-institucional">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1534438327276-14e5300c3a48?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Flux Fitness | Performance Center">
+  <meta name="twitter:description" content="Modelo institucional fitness com visual escuro, secoes de programas e contato.">
+  <link rel="canonical" href="https://example.com/site-institucional">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 <body>
 
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg fixed-top">
   <div class="container">
-    <a class="navbar-brand" href="#">Template</a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav">
+    <a class="navbar-brand" href="#inicio">Flux Fitness</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#nav" aria-controls="nav" aria-expanded="false" aria-label="Alternar navegacao">
       <span class="navbar-toggler-icon"></span>
     </button>
     <div class="collapse navbar-collapse" id="nav">
-      <ul class="navbar-nav ms-auto">
-        <li class="nav-item"><a class="nav-link" href="#">Home</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Sobre</a></li>
-        <li class="nav-item"><a class="nav-link" href="#">Contato</a></li>
+      <ul class="navbar-nav ms-auto align-items-lg-center">
+        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+        <li class="nav-item"><a class="nav-link" href="#sobre">Sobre</a></li>
+        <li class="nav-item"><a class="nav-link" href="#programas">Programas</a></li>
+        <li class="nav-item"><a class="nav-link" href="#equipe">Equipe</a></li>
+        <li class="nav-item"><a class="nav-link" href="#planos">Planos</a></li>
+        <li class="nav-item"><a class="nav-link" href="#galeria">Galeria</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faq">FAQ</a></li>
+        <li class="nav-item ms-lg-2"><a class="btn btn-sm btn-accent mt-2 mt-lg-0" href="#contato">Agendar visita</a></li>
       </ul>
     </div>
   </div>
 </nav>
 
-<section class="hero d-flex align-items-center text-center text-white">
-  <div class="container">
-    <h1 class="display-4">Site Institucional</h1>
-    <p class="lead">Template base com Bootstrap 5 + CSS3 + jQuery</p>
-    <a href="#" class="btn btn-primary btn-lg">Saiba Mais</a>
-  </div>
-</section>
+<main>
+  <section id="inicio" class="hero">
+    <div class="container">
+      <div class="row g-5 align-items-center">
+        <div class="col-lg-7">
+          <p class="eyebrow mb-3">PERFORMANCE CENTER</p>
+          <h1 class="display-4 fw-bold mb-3">Treinamento inteligente para resultados consistentes</h1>
+          <p class="lead text-secondary mb-4">Ambiente premium, metodologia baseada em dados e acompanhamento continuo para empresas e alunos de alta performance.</p>
+          <div class="d-flex flex-wrap gap-3">
+            <a href="#contato" class="btn btn-accent btn-lg px-4">Comecar hoje</a>
+            <a href="#programas" class="btn btn-outline-light btn-lg px-4">Conhecer programas</a>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="hero-panel reveal-item">
+            <h2 class="h5 mb-3">Indicadores de evolucao</h2>
+            <div class="metric-row"><span>Retencao media</span><strong class="counter" data-target="94">0%</strong></div>
+            <div class="metric-row"><span>Adesao ao plano anual</span><strong class="counter" data-target="68">0%</strong></div>
+            <div class="metric-row"><span>Satisfacao dos alunos</span><strong class="counter" data-target="97">0%</strong></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-<footer class="bg-dark text-white text-center py-3">
-  <div class="container">
-    <small>© 2026 Template Preview</small>
+  <section id="sobre" class="section-space">
+    <div class="container">
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <p class="eyebrow mb-2">Quem somos</p>
+          <h2 class="h1 mb-3">Site institucional para marca fitness de alto padrao</h2>
+          <p class="text-secondary mb-0">A Flux Fitness combina treinamento funcional, forca e condicionamento em protocolos claros. Este template transmite autoridade com visual limpo, escuro e objetivo.</p>
+        </div>
+        <div class="col-lg-6">
+          <div class="grid-mini">
+            <article class="mini-card reveal-item">
+              <h3 class="h6 mb-1">Metodo proprietario</h3>
+              <p class="mb-0">Diagnostico, periodizacao e acompanhamento semanal.</p>
+            </article>
+            <article class="mini-card reveal-item">
+              <h3 class="h6 mb-1">Equipe certificada</h3>
+              <p class="mb-0">Profissionais com foco em biomecanica e performance.</p>
+            </article>
+            <article class="mini-card reveal-item">
+              <h3 class="h6 mb-1">Gestao por dados</h3>
+              <p class="mb-0">Metrica de progresso para cada objetivo do aluno.</p>
+            </article>
+            <article class="mini-card reveal-item">
+              <h3 class="h6 mb-1">Experiencia premium</h3>
+              <p class="mb-0">Ambiente organizado, agenda flexivel e suporte rapido.</p>
+            </article>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="programas" class="section-space section-muted">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-7">
+          <p class="eyebrow mb-2">Programas</p>
+          <h2 class="h1 mb-0">Solucoes para cada perfil de treino</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="program-card reveal-item h-100">
+            <h3 class="h5">Condicionamento</h3>
+            <p class="mb-0">Sessoes focadas em resistencia, mobilidade e energia diaria.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="program-card reveal-item h-100 featured">
+            <h3 class="h5">Forca e hipertrofia</h3>
+            <p class="mb-0">Plano progressivo para ganho de massa e evolucao tecnica.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="program-card reveal-item h-100">
+            <h3 class="h5">Treino corporativo</h3>
+            <p class="mb-0">Programas in-company para saude, foco e produtividade do time.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="equipe" class="section-space">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-7">
+          <p class="eyebrow mb-2">Equipe</p>
+          <h2 class="h1 mb-0">Profissionais que acompanham cada etapa</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-md-4">
+          <article class="team-card reveal-item h-100">
+            <h3 class="h5 mb-1">Thiago Nunes</h3>
+            <p class="role mb-2">Head Coach</p>
+            <p class="mb-0">Especialista em forca e preparacao fisica para alta intensidade.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="team-card reveal-item h-100">
+            <h3 class="h5 mb-1">Patricia Lima</h3>
+            <p class="role mb-2">Mobility Trainer</p>
+            <p class="mb-0">Focada em prevencao de lesao e qualidade de movimento.</p>
+          </article>
+        </div>
+        <div class="col-md-4">
+          <article class="team-card reveal-item h-100">
+            <h3 class="h5 mb-1">Guilherme Costa</h3>
+            <p class="role mb-2">Performance Analyst</p>
+            <p class="mb-0">Monitora indicadores e adapta treinos por desempenho real.</p>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="planos" class="section-space section-muted">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-7">
+          <p class="eyebrow mb-2">Planos</p>
+          <h2 class="h1 mb-0">Modalidades para diferentes objetivos</h2>
+        </div>
+      </div>
+      <div class="row g-4">
+        <div class="col-lg-4">
+          <article class="pricing-card reveal-item h-100">
+            <h3 class="h5">Start</h3>
+            <p class="price">R$ 189<span>/mes</span></p>
+            <ul class="list-clean mb-0">
+              <li>3 treinos por semana</li>
+              <li>Avaliacao inicial</li>
+              <li>Acompanhamento mensal</li>
+            </ul>
+          </article>
+        </div>
+        <div class="col-lg-4">
+          <article class="pricing-card reveal-item h-100 featured">
+            <h3 class="h5">Performance</h3>
+            <p class="price">R$ 289<span>/mes</span></p>
+            <ul class="list-clean mb-0">
+              <li>Treino ilimitado</li>
+              <li>Revisao quinzenal</li>
+              <li>Suporte com coach</li>
+            </ul>
+          </article>
+        </div>
+        <div class="col-lg-4">
+          <article class="pricing-card reveal-item h-100">
+            <h3 class="h5">Corporate</h3>
+            <p class="price">Sob consulta</p>
+            <ul class="list-clean mb-0">
+              <li>Programa para equipes</li>
+              <li>Plano in-company</li>
+              <li>Relatorio de engajamento</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="galeria" class="section-space">
+    <div class="container">
+      <div class="row mb-4">
+        <div class="col-lg-7">
+          <p class="eyebrow mb-2">Galeria</p>
+          <h2 class="h1 mb-0">Ambientes do centro de treinamento</h2>
+        </div>
+      </div>
+      <div class="row g-3">
+        <div class="col-md-6 col-lg-3"><div class="gallery-card reveal-item">Studio Functional</div></div>
+        <div class="col-md-6 col-lg-3"><div class="gallery-card reveal-item">Rack Zone</div></div>
+        <div class="col-md-6 col-lg-3"><div class="gallery-card reveal-item">Recovery Space</div></div>
+        <div class="col-md-6 col-lg-3"><div class="gallery-card reveal-item">Lounge Wellness</div></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="faq" class="section-space section-muted">
+    <div class="container">
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <p class="eyebrow mb-2 text-center">FAQ</p>
+          <h2 class="h1 mb-4 text-center">Perguntas frequentes</h2>
+          <div class="accordion faq-accordion" id="faqAccordion">
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">
+                  Este template funciona no GitHub Pages?
+                </button>
+              </h3>
+              <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Sim. O site e totalmente estatico e pronto para publicacao direta.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">
+                  Posso trocar os planos e servicos depois?
+                </button>
+              </h3>
+              <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Pode. A estrutura foi feita para facilitar ajuste de blocos e precos.</div>
+              </div>
+            </div>
+            <div class="accordion-item">
+              <h3 class="accordion-header">
+                <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqThree" aria-expanded="false" aria-controls="faqThree">
+                  O formulario ja tem validacao?
+                </button>
+              </h3>
+              <div id="faqThree" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                <div class="accordion-body">Sim. Nome, email e telefone sao validados com feedback visual.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="contato" class="section-space">
+    <div class="container">
+      <div class="contact-wrap">
+        <div class="row g-4 align-items-center">
+          <div class="col-lg-6">
+            <p class="eyebrow mb-2">Contato</p>
+            <h2 class="h1 mb-3">Agende uma visita tecnica</h2>
+            <p class="text-secondary mb-0">Preencha o formulario para conhecer a estrutura e receber uma proposta alinhada ao seu objetivo.</p>
+          </div>
+          <div class="col-lg-6">
+            <form id="contact-form" class="row g-3" novalidate>
+              <div class="col-12">
+                <input type="text" id="nome" class="form-control" placeholder="Nome">
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="col-md-6">
+                <input type="email" id="email" class="form-control" placeholder="Email">
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="col-md-6">
+                <input type="tel" id="telefone" class="form-control" placeholder="Telefone">
+                <div class="invalid-feedback"></div>
+              </div>
+              <div class="col-12 d-grid">
+                <button id="contact-submit" type="submit" class="btn btn-accent btn-lg">Solicitar contato</button>
+              </div>
+              <div class="col-12">
+                <p id="form-feedback" class="form-feedback mb-0" aria-live="polite"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<button id="back-to-top" class="back-to-top" type="button" aria-label="Voltar ao topo">Topo</button>
+
+<footer class="footer py-4">
+  <div class="container text-center">
+    <small>&copy; 2026 Flux Fitness. Template institucional dark para GitHub Pages.</small>
   </div>
 </footer>
 

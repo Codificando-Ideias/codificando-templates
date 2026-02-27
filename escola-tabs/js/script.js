@@ -1,0 +1,2 @@
+﻿// Interacoes de tema e navegacao
+$(function(){const k='edu_theme';const set=t=>$('body').attr('data-theme',t);set(localStorage.getItem(k)||'light');$('#themeToggle').on('click',()=>{const t=$('body').attr('data-theme')==='light'?'dark':'light';set(t);localStorage.setItem(k,t);});$('.t').on('click',function(){const id=$(this).data('tab');$('.t').removeClass('active');$(this).addClass('active');$('.pane').removeClass('active');$('#'+id).addClass('active');});});

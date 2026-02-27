@@ -1,0 +1,149 @@
+﻿<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Petshop Hub | Patas & Cia</title>
+  <meta name="description" content="Template criativo para petshop com modo claro/escuro, icones e layout estilo hub.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-theme="light">
+  <div class="hub-layout">
+    <aside class="side-panel">
+      <div class="brand-block">
+        <div class="brand-icon"><i class="bi bi-heart-pulse"></i></div>
+        <div>
+          <strong>Patas & Cia</strong>
+          <small>Cuidado completo para pets</small>
+        </div>
+      </div>
+
+      <nav class="hub-nav">
+        <a href="#visao" class="hub-link active"><i class="bi bi-grid-1x2"></i><span>Visao geral</span></a>
+        <a href="#servicos" class="hub-link"><i class="bi bi-scissors"></i><span>Servicos</span></a>
+        <a href="#planos" class="hub-link"><i class="bi bi-stars"></i><span>Planos</span></a>
+        <a href="#faq" class="hub-link"><i class="bi bi-question-circle"></i><span>FAQ</span></a>
+        <a href="#agenda" class="hub-link"><i class="bi bi-calendar-check"></i><span>Agendamento</span></a>
+      </nav>
+
+      <div class="side-actions">
+        <button id="theme-toggle" type="button" class="btn btn-sm btn-outline-secondary w-100"><i class="bi bi-circle-half me-1"></i>Tema</button>
+      </div>
+    </aside>
+
+    <main class="hub-main">
+      <header class="topbar">
+        <h1 class="h4 mb-0">Central do Petshop</h1>
+        <p class="text-muted mb-0">Uma pagina unica para vender servicos, produtos e agendamentos</p>
+      </header>
+
+      <section id="visao" class="hub-section">
+        <div class="mosaic">
+          <article class="card-box hero-box reveal-item">
+            <p class="tag"><i class="bi bi-emoji-smile me-1"></i>Bem-estar animal</p>
+            <h2 class="display-6 fw-bold mb-2">Petshop moderno para banho, tosa e saude preventiva</h2>
+            <p class="text-muted mb-3">Layout pensado para conversao rapida: cliente entende servicos, escolhe plano e agenda em poucos toques.</p>
+            <div class="hero-cta">
+              <a href="#agenda" class="btn btn-primary-soft">Agendar agora</a>
+              <a href="#planos" class="btn btn-outline-secondary">Ver planos</a>
+            </div>
+          </article>
+
+          <article class="card-box stat-box reveal-item">
+            <h3 class="h6 mb-3">Indicadores da semana</h3>
+            <div class="stat-row"><span>Banhos realizados</span><strong class="counter" data-target="128">0</strong></div>
+            <div class="stat-row"><span>Tosas higienicas</span><strong class="counter" data-target="84">0</strong></div>
+            <div class="stat-row"><span>Clientes recorrentes</span><strong class="counter" data-target="72">0%</strong></div>
+          </article>
+
+          <article class="card-box feed-box reveal-item">
+            <h3 class="h6 mb-2"><i class="bi bi-bag-heart me-1"></i>Novidade da semana</h3>
+            <p class="mb-2">Linha de snacks naturais com desconto para assinantes do plano mensal.</p>
+            <small class="text-muted">Valido ate domingo.</small>
+          </article>
+        </div>
+      </section>
+
+      <section id="servicos" class="hub-section">
+        <div class="section-head">
+          <h2 class="h4 mb-0">Servicos em destaque</h2>
+          <div class="service-switch" role="group" aria-label="Tipo de pet">
+            <button class="switch-btn active" data-target="dog">Cachorros</button>
+            <button class="switch-btn" data-target="cat">Gatos</button>
+          </div>
+        </div>
+
+        <div class="services-panel active" id="service-dog">
+          <div class="row g-3">
+            <div class="col-md-4"><article class="card-box service-card reveal-item"><i class="bi bi-droplet-half"></i><h3 class="h6">Banho Premium</h3><p class="text-muted mb-0">Hidratacao, secagem modelada e perfume suave.</p></article></div>
+            <div class="col-md-4"><article class="card-box service-card reveal-item"><i class="bi bi-scissors"></i><h3 class="h6">Tosa Raca</h3><p class="text-muted mb-0">Padrao da raca com acabamento profissional.</p></article></div>
+            <div class="col-md-4"><article class="card-box service-card reveal-item"><i class="bi bi-shield-check"></i><h3 class="h6">Check-up Preventivo</h3><p class="text-muted mb-0">Avaliacao rapida com orientacao de rotina.</p></article></div>
+          </div>
+        </div>
+
+        <div class="services-panel" id="service-cat">
+          <div class="row g-3">
+            <div class="col-md-4"><article class="card-box service-card reveal-item"><i class="bi bi-wind"></i><h3 class="h6">Banho a seco</h3><p class="text-muted mb-0">Higiene delicada para felinos estressados.</p></article></div>
+            <div class="col-md-4"><article class="card-box service-card reveal-item"><i class="bi bi-stars"></i><h3 class="h6">Escovacao anti-nos</h3><p class="text-muted mb-0">Controle de queda e melhor acabamento da pelagem.</p></article></div>
+            <div class="col-md-4"><article class="card-box service-card reveal-item"><i class="bi bi-house-heart"></i><h3 class="h6">Adaptacao domiciliar</h3><p class="text-muted mb-0">Plano de bem-estar para rotina em apartamento.</p></article></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="planos" class="hub-section">
+        <div class="section-head">
+          <h2 class="h4 mb-0">Planos de assinatura</h2>
+        </div>
+        <div class="row g-3">
+          <div class="col-lg-4"><article class="card-box price-card reveal-item"><h3 class="h6">Basico</h3><p class="price">R$ 99<span>/mes</span></p><ul><li>1 banho mensal</li><li>10% em produtos</li></ul></article></div>
+          <div class="col-lg-4"><article class="card-box price-card featured reveal-item"><h3 class="h6">Conforto</h3><p class="price">R$ 179<span>/mes</span></p><ul><li>2 banhos + 1 tosa</li><li>Entrega de racao</li></ul></article></div>
+          <div class="col-lg-4"><article class="card-box price-card reveal-item"><h3 class="h6">Saude+</h3><p class="price">R$ 289<span>/mes</span></p><ul><li>Pacote completo</li><li>Prioridade em consulta</li></ul></article></div>
+        </div>
+      </section>
+
+      <section id="faq" class="hub-section">
+        <div class="section-head">
+          <h2 class="h4 mb-0">Perguntas frequentes</h2>
+        </div>
+        <div class="accordion faq-accordion" id="faqAccordion">
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">Atendem pets de grande porte?</button></h3>
+            <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Sim, com equipe preparada e area adequada para porte grande.</div></div>
+          </div>
+          <div class="accordion-item">
+            <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Temos pacote mensal sem fidelidade?</button></h3>
+            <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Sim, com cancelamento simples ate 48h antes da renovacao.</div></div>
+          </div>
+        </div>
+      </section>
+
+      <section id="agenda" class="hub-section">
+        <div class="section-head">
+          <h2 class="h4 mb-0">Agende o atendimento</h2>
+        </div>
+        <article class="card-box form-box">
+          <form id="booking-form" class="row g-3" novalidate>
+            <div class="col-md-6"><input id="tutor" class="form-control" type="text" placeholder="Nome do tutor"><div class="invalid-feedback"></div></div>
+            <div class="col-md-6"><input id="pet" class="form-control" type="text" placeholder="Nome do pet"><div class="invalid-feedback"></div></div>
+            <div class="col-md-6"><input id="phone" class="form-control" type="tel" placeholder="WhatsApp"><div class="invalid-feedback"></div></div>
+            <div class="col-md-6"><select id="service" class="form-select"><option value="">Servico desejado</option><option>Banho</option><option>Tosa</option><option>Consulta</option></select><div class="invalid-feedback"></div></div>
+            <div class="col-12 d-grid d-md-flex justify-content-md-end gap-2">
+              <button id="booking-submit" class="btn btn-primary-soft" type="submit"><i class="bi bi-send me-1"></i>Enviar agendamento</button>
+            </div>
+            <div class="col-12"><p id="booking-feedback" class="form-feedback mb-0" aria-live="polite"></p></div>
+          </form>
+        </article>
+      </section>
+    </main>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+</html>
