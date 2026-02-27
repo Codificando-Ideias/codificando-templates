@@ -2,6 +2,11 @@
 
 on:
   workflow_dispatch:
+    inputs:
+      force_regen:
+        description: "Regenerar thumbnails mesmo quando preview.png já existir"
+        required: false
+        default: "false"
   push:
     branches: ["main"]
     paths:
@@ -61,6 +66,12 @@ jobs:
 
               const url = `http://127.0.0.1:5500/${slug}/`;
               const out = path.join(dir, 'preview.png');
+              const forceRegen = String(process.env.FORCE_REGEN || 'false') === 'true';
+
+              if (fs.existsSync(out) && !forceRegen) {
+                console.log(`[skip] preview already exists: ${slug}/preview.png`);
+                continue;
+              }
 
               try {
                 await page.goto(url, { waitUntil: 'networkidle', timeout: 45000 });
@@ -74,6 +85,8 @@ jobs:
             await browser.close();
           })();
           NODE
+        env:
+          FORCE_REGEN: ${{ github.event.inputs.force_regen || 'false' }}
 
       - name: Stop static server
         if: always()
