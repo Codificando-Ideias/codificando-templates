@@ -68,10 +68,7 @@ function renderTemplates(list) {
             <h5 class="card-title">${template.name}</h5>
             <p class="card-text">${template.description}</p>
             <div class="d-flex justify-content-between">
-              <a href="${template.slug}/" class="btn btn-dark btn-sm">Visualizar</a>
-              <a href="https://github.com/codificando-ideias/codificando-templates/tree/main/${template.slug}" target="_blank" class="btn btn-outline-dark btn-sm">
-                Código
-              </a>
+              <a href="${template.slug}/" target="_blank" class="btn btn-dark btn-sm">Visualizar</a>
             </div>
           </div>
         </div>
