@@ -1,8 +1,23 @@
 ﻿<!doctype html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-  <title>BurgerFlow Hub</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>BurgerFlow Hub | Hamburgueria Inteligente</title>
+  <meta name="description" content="Template mobile-first para hamburgueria com foco em operação inteligente, cardápio e conversão.">
+  <meta name="keywords" content="hamburgueria, delivery, cardápio digital, template, mobile-first">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="BurgerFlow Hub | Hamburgueria Inteligente">
+  <meta property="og:description" content="Tecnologia potencializando o humano na operação de hamburgueria.">
+  <meta property="og:url" content="https://example.com/hamburgueria-app">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1568901346375-23c9450c58cd?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="BurgerFlow Hub | Hamburgueria Inteligente">
+  <meta name="twitter:description" content="Eficiência através de dados para atendimento e delivery.">
+  <link rel="canonical" href="https://example.com/hamburgueria-app">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="./css/style.css">
@@ -10,53 +25,105 @@
 <body data-theme="light">
   <main class="app">
     <header class="app-top">
-      <strong><i class="bi bi-fire me-1"></i>BurgerFlow</strong>
-      <button id="themeToggle" class="btn btn-sm btn-outline-secondary"><i class="bi bi-circle-half"></i></button>
+      <div>
+        <small class="text-muted d-block">BurgerFlow Hub</small>
+        <strong><i class="bi bi-fire me-1"></i>Operação inteligente</strong>
+      </div>
+      <button id="themeToggle" class="btn btn-sm btn-outline-secondary" type="button" aria-label="Alternar tema">
+        <i class="bi bi-circle-half"></i>
+      </button>
     </header>
 
     <section id="apresentacao" class="screen active">
-      <h1>Hamburgueria orientada por dados e sabor</h1>
-      <p>Tecnologia potencializando o humano na cozinha, no caixa e no delivery.</p>
-      <div class="kpis"><article><small>Pedidos/dia</small><strong>312</strong></article><article><small>Tempo medio</small><strong>18m</strong></article></div>
+      <p class="eyebrow mb-2">Tecnologia potencializando o humano</p>
+      <h1 class="h3 mb-2">Gestão de hamburgueria com dados em tempo real</h1>
+      <p class="text-muted mb-3">Da produção ao delivery, tudo em um fluxo único para reduzir atrasos e elevar experiência.</p>
+      <div class="kpis">
+        <article><small>Pedidos/dia</small><strong class="counter" data-target="312">0</strong></article>
+        <article><small>Tempo médio</small><strong class="counter" data-target="18">0</strong><span>min</span></article>
+      </div>
+      <div class="cta-row mt-3">
+        <button class="btn btn-brand go-screen" data-target="cardapio" type="button">Ver cardápio</button>
+        <button class="btn btn-outline-secondary go-screen" data-target="contato" type="button">Falar com time</button>
+      </div>
+    </section>
+
+    <section id="cardapio" class="screen">
+      <div class="screen-head">
+        <h2 class="h6 mb-0">Cardápio dinâmico</h2>
+        <div class="btn-group btn-group-sm filter-group" role="group" aria-label="Filtro cardápio">
+          <button class="btn btn-outline-secondary active" data-filter="all" type="button">Todos</button>
+          <button class="btn btn-outline-secondary" data-filter="smash" type="button">Smash</button>
+          <button class="btn btn-outline-secondary" data-filter="especial" type="button">Especiais</button>
+        </div>
+      </div>
+      <div class="menu-list">
+        <article class="menu-item" data-cat="smash"><h3>Smash Classic</h3><p>Pão brioche, duplo smash e cheddar.</p><strong>R$ 28</strong></article>
+        <article class="menu-item" data-cat="smash"><h3>Smash Bacon</h3><p>Bacon crispy, molho especial da casa.</p><strong>R$ 32</strong></article>
+        <article class="menu-item" data-cat="especial"><h3>Truffle Melt</h3><p>Blend premium com maionese trufada.</p><strong>R$ 39</strong></article>
+        <article class="menu-item" data-cat="especial"><h3>Blue Heat</h3><p>Gorgonzola, cebola caramelizada e rúcula.</p><strong>R$ 41</strong></article>
+      </div>
     </section>
 
     <section id="servicos" class="screen">
-      <h2>Servicos</h2>
+      <h2 class="h6 mb-3">Serviços e canais</h2>
       <div class="list">
-        <article><i class="bi bi-bag-check"></i><div><h3>Delivery inteligente</h3><p>Fila e rota otimizadas por prioridade.</p></div></article>
-        <article><i class="bi bi-shop"></i><div><h3>Balcao express</h3><p>Atendimento rapido com previsao de demanda.</p></div></article>
+        <article><i class="bi bi-bag-check"></i><div><h3>Delivery inteligente</h3><p>Fila e roteirização priorizadas por SLA.</p></div></article>
+        <article><i class="bi bi-shop"></i><div><h3>Balcão express</h3><p>Retirada rápida com previsão por pedido.</p></div></article>
+        <article><i class="bi bi-graph-up-arrow"></i><div><h3>Painel de eficiência</h3><p>Dados de ticket médio, pico e recorrência.</p></div></article>
       </div>
     </section>
 
     <section id="diferenciais" class="screen">
-      <h2>Diferenciais</h2>
-      <ul>
-        <li>Inovacao pratica em operacao</li>
-        <li>Eficiência através de dados</li>
-        <li>Inteligência aplicada ao negócio</li>
+      <h2 class="h6 mb-3">Diferenciais</h2>
+      <ul class="points">
+        <li><i class="bi bi-cpu me-1"></i>Inovação prática em operação de cozinha</li>
+        <li><i class="bi bi-bar-chart me-1"></i>Eficiência através de dados de demanda</li>
+        <li><i class="bi bi-people me-1"></i>Inteligência aplicada ao negócio e ao atendimento</li>
       </ul>
+      <div class="accordion faq mt-3" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">Como melhora o tempo de entrega?</button></h3>
+          <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Priorizamos pedidos por etapa e distância, reduzindo gargalos no despacho.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Funciona para loja física e delivery?</button></h3>
+          <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Sim, os fluxos de balcão e entrega coexistem com visibilidade central.</div></div>
+        </div>
+      </div>
     </section>
 
     <section id="contato" class="screen">
-      <h2>Contato</h2>
-      <form id="contactForm" class="row g-2">
-        <div class="col-12"><input id="name" class="form-control" placeholder="Nome"></div>
-        <div class="col-12"><input id="email" class="form-control" placeholder="Email"></div>
-        <div class="col-12"><textarea id="msg" class="form-control" rows="3" placeholder="Mensagem"></textarea></div>
-        <div class="col-12 d-grid"><button class="btn btn-brand" type="submit">Enviar</button></div>
-        <div class="col-12"><small id="fb"></small></div>
+      <h2 class="h6 mb-3">Contato comercial</h2>
+      <form id="contactForm" class="row g-2" novalidate>
+        <div class="col-12">
+          <input id="name" class="form-control" placeholder="Nome" type="text">
+          <div class="invalid-feedback"></div>
+        </div>
+        <div class="col-12">
+          <input id="email" class="form-control" placeholder="Email" type="email">
+          <div class="invalid-feedback"></div>
+        </div>
+        <div class="col-12">
+          <textarea id="msg" class="form-control" rows="3" placeholder="Seu desafio atual"></textarea>
+          <div class="invalid-feedback"></div>
+        </div>
+        <div class="col-12 d-grid"><button id="submitBtn" class="btn btn-brand" type="submit">Enviar</button></div>
+        <div class="col-12"><small id="fb" class="feedback"></small></div>
       </form>
     </section>
   </main>
 
   <nav class="bottom-nav">
-    <button class="tab active" data-screen="apresentacao"><i class="bi bi-house"></i><span>Inicio</span></button>
-    <button class="tab" data-screen="servicos"><i class="bi bi-grid"></i><span>Servicos</span></button>
-    <button class="tab" data-screen="diferenciais"><i class="bi bi-stars"></i><span>Diferenciais</span></button>
-    <button class="tab" data-screen="contato"><i class="bi bi-chat-dots"></i><span>Contato</span></button>
+    <button class="tab active" data-screen="apresentacao" type="button"><i class="bi bi-house"></i><span>Início</span></button>
+    <button class="tab" data-screen="cardapio" type="button"><i class="bi bi-menu-button-wide"></i><span>Cardápio</span></button>
+    <button class="tab" data-screen="servicos" type="button"><i class="bi bi-grid"></i><span>Serviços</span></button>
+    <button class="tab" data-screen="diferenciais" type="button"><i class="bi bi-stars"></i><span>Diferenciais</span></button>
+    <button class="tab" data-screen="contato" type="button"><i class="bi bi-chat-dots"></i><span>Contato</span></button>
   </nav>
 
   <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
   <script src="./js/script.js"></script>
 </body>
 </html>

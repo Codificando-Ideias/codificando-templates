@@ -1,1 +1,92 @@
-﻿<!doctype html><html lang="pt-br"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Contab Grid</title><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"><link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"><link rel="stylesheet" href="./css/style.css"></head><body data-theme="light"><main class="grid"><article id="apresentacao" class="a"><button id="themeToggle" class="btn btn-sm btn-outline-secondary float-end"><i class="bi bi-circle-half"></i></button><h1>Contabilidade guiada por dados e eficiencia</h1><p>Inteligência aplicada ao negócio para reduzir risco e aumentar previsibilidade.</p></article><article id="servicos" class="b"><h2>Servicos</h2><p>BPO financeiro, fiscal e consultoria inteligente.</p></article><article id="diferenciais" class="c"><h2>Diferenciais</h2><ul><li>Automacao de rotinas</li><li>Painel de indicadores</li><li>Inovacao pratica</li></ul></article><article id="contato" class="d"><h2>Contato</h2><form><input class="form-control mb-2" placeholder="Empresa"><input class="form-control mb-2" placeholder="Email"><button class="btn btn-brand w-100">Solicitar diagnostico</button></form></article></main><script src="https://code.jquery.com/jquery-3.7.1.min.js"></script><script src="./js/script.js"></script></body></html>
+﻿<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contab Grid | Escritório Contábil Inteligente</title>
+  <meta name="description" content="Template institucional para escritório contábil com arquitetura em grid assimétrico e foco em eficiência por dados.">
+  <meta name="keywords" content="escritório contábil, BPO financeiro, contabilidade consultiva, dados, eficiência">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Contab Grid | Escritório Contábil Inteligente">
+  <meta property="og:description" content="Inteligência aplicada ao negócio para reduzir risco e aumentar previsibilidade fiscal.">
+  <meta property="og:url" content="https://example.com/contabil-grid">
+  <meta property="og:image" content="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?auto=format&fit=crop&w=1200&q=80">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Contab Grid | Escritório Contábil Inteligente">
+  <meta name="twitter:description" content="Contabilidade guiada por dados e inovação prática.">
+  <link rel="canonical" href="https://example.com/contabil-grid">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body data-theme="light">
+  <main class="grid">
+    <article id="apresentacao" class="a card-box reveal">
+      <button id="themeToggle" class="btn btn-sm btn-outline-secondary float-end" aria-label="Alternar tema"><i class="bi bi-circle-half"></i></button>
+      <p class="eyebrow mb-2">Tecnologia potencializando o humano</p>
+      <h1 class="display-6 fw-bold mb-2">Contabilidade guiada por dados e eficiência operacional</h1>
+      <p class="text-muted mb-3">Acompanhamento fiscal, financeiro e estratégico para empresas que precisam de previsibilidade e inteligência aplicada ao negócio.</p>
+      <div class="kpis">
+        <article><small>Clientes ativos</small><strong class="counter" data-target="186">0</strong></article>
+        <article><small>Conformidade fiscal</small><strong class="counter" data-target="99">0%</strong></article>
+        <article><small>Horas poupadas/mês</small><strong class="counter" data-target="420">0</strong></article>
+      </div>
+    </article>
+
+    <article id="servicos" class="b card-box reveal">
+      <h2 class="h5 mb-3">Serviços</h2>
+      <ul class="service-list">
+        <li><i class="bi bi-cash-stack"></i><span>BPO financeiro completo</span></li>
+        <li><i class="bi bi-receipt-cutoff"></i><span>Fiscal e tributário consultivo</span></li>
+        <li><i class="bi bi-clipboard-data"></i><span>Dashboard gerencial mensal</span></li>
+      </ul>
+    </article>
+
+    <article id="diferenciais" class="c card-box reveal">
+      <h2 class="h5 mb-3">Diferenciais</h2>
+      <div class="steps">
+        <div><span>01</span><p>Automação de rotinas com validação humana.</p></div>
+        <div><span>02</span><p>Painel de indicadores para decisões rápidas.</p></div>
+        <div><span>03</span><p>Inovação prática com foco em caixa e margem.</p></div>
+      </div>
+      <div class="accordion faq mt-3" id="faqAccordion">
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faqOne" aria-expanded="true" aria-controls="faqOne">Como reduzimos risco fiscal?</button></h3>
+          <div id="faqOne" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion"><div class="accordion-body">Com monitoramento contínuo de obrigações e alertas preventivos de inconsistência.</div></div>
+        </div>
+        <div class="accordion-item">
+          <h3 class="accordion-header"><button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faqTwo" aria-expanded="false" aria-controls="faqTwo">Atendem empresas em crescimento?</button></h3>
+          <div id="faqTwo" class="accordion-collapse collapse" data-bs-parent="#faqAccordion"><div class="accordion-body">Sim, a estrutura escala de MEI a operação com múltiplas unidades.</div></div>
+        </div>
+      </div>
+    </article>
+
+    <article id="contato" class="d card-box reveal">
+      <h2 class="h5 mb-3">Contato</h2>
+      <form id="contactForm" class="row g-2" novalidate>
+        <div class="col-12">
+          <input id="company" class="form-control" placeholder="Empresa" type="text">
+          <div class="invalid-feedback"></div>
+        </div>
+        <div class="col-12">
+          <input id="email" class="form-control" placeholder="Email" type="email">
+          <div class="invalid-feedback"></div>
+        </div>
+        <div class="col-12">
+          <textarea id="msg" class="form-control" rows="3" placeholder="Objetivo do diagnóstico"></textarea>
+          <div class="invalid-feedback"></div>
+        </div>
+        <div class="col-12 d-grid"><button id="submitBtn" class="btn btn-brand w-100" type="submit">Solicitar diagnóstico</button></div>
+        <div class="col-12"><small id="fb" class="feedback"></small></div>
+      </form>
+    </article>
+  </main>
+
+  <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/script.js"></script>
+</body>
+</html>
