@@ -100,10 +100,13 @@ jobs:
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          if [ -n "$(find . -type f -name 'preview.png' -print -quit)" ] && [ -n "$(git status --porcelain)" ]; then
-            find . -type f -name "preview.png" -print0 | xargs -0 git add
+          # adiciona apenas previews
+          find . -type f -name "preview.png" -print0 | xargs -0 git add
+
+          # verifica se houve mudança real
+          if git diff --cached --quiet; then
+            echo "No thumbnail changes"
+          else
             git commit -m "chore: update template thumbnails"
             git push
-          else
-            echo "No thumbnail changes"
           fi
